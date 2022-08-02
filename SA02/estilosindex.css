@@ -1,0 +1,48 @@
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cabecalho_logotipo{
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho_logo{
+    height: 110px;
+}
+
+.cabecalho_slogan{
+    width: 10vw;
+    text-align: center;
+
+}
+
+
+.cabecalho_pesquisa{
+    display: flex;
+}
+
+.cabecalho_barra_de_pesquisa{
+    width: 38vw;
+    height: 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.cabecalho_pesquisar{
+    height: 34px;
+    border-left: 2px solid #000000;
+    position: absolute;
+    right: 25vw;
+}
+
+.cabecalho_dados{
+    display: flex;
+}
+
+.cabecalho_carrinho{
+    height: 50px;
+}
