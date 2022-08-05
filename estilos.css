@@ -1,0 +1,18 @@
+p {
+    border: 5px dotted red;
+}
+
+#penultimo-paragrafo{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 30%;
+    border-color: yellow;
+}
+
+.subtitulo{
+    padding: 20px;
+    border: 1px solid red;
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+}

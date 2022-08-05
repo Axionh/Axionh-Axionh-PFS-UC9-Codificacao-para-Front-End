@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model - O modelo de caixa das tags</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* prorpiedades d box model */
+        p {
+            margin: 20px;
+            padding: 20px;
+            border: 5px solid red;
+        }
+
+        #p-um{
+            margin-bottom: 50px;
+        }
+
+        #p-dois{
+            padding-top: 60px;
+            width: 300px;
+            height: 300px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <p id="p-um">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consequat venenatis nibh quis tempus. Pellentesque sem erat, sollicitudin sed nisi a, elementum commodo orci. Maecenas enim orci, mattis sit amet odio non, consequat placerat ipsum. Integer non leo felis. In in lacus sit amet lectus auctor consectetur. Donec sed fringilla tellus. Suspendisse eu felis vestibulum, volutpat lorem eget, condimentum urna.</p>
+    
+    <p id="p-dois">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consequat venenatis nibh quis tempus. Pellentesque sem erat, sollicitudin sed nisi a, elementum commodo orci. Maecenas enim orci, mattis sit amet odio non, consequat placerat ipsum. Integer non leo felis. In in lacus sit amet lectus auctor consectetur. Donec sed fringilla tellus. Suspendisse eu felis vestibulum, volutpat lorem eget, condimentum urna.</p>
+
+</body>
+</html>

@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: black;
 }
 
 .cabecalho_logotipo{
@@ -18,7 +19,6 @@
     text-align: center;
 
 }
-
 
 .cabecalho_pesquisa{
     display: flex;
@@ -41,6 +41,7 @@
 
 .cabecalho_dados{
     display: flex;
+    color: #ffffff;
 }
 
 .cabecalho_carrinho{

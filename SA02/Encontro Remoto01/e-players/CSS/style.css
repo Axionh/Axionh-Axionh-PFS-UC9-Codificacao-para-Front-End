@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    background-color: black;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+header .logo{
+    border: 2px solid white;
+}
+
+header .menu{
+    border: 2px solid red;
+}
+
+header .menu a{
+    color: white;
+}
