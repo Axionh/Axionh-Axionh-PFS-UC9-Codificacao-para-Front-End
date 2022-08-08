@@ -1,3 +1,4 @@
+/* Informaçoes do HEADER */
 .cabecalho{
     display: flex;
     align-items: center;
@@ -47,3 +48,33 @@
 .cabecalho_carrinho{
     height: 50px;
 }
+
+
+/* INFORMAÇÕES DO FOOTER */
+.rodape{
+    display: flex;
+    background-color: #000000;
+    color: #ffffff;
+    height: 55px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape-logo{
+    height: 50px;
+
+}
+
+.rodapre-localizacao{
+
+}
+
+.rodape-redes-icones{
+    display: flex;
+    justify-content: space-between;
+}
+
+.face-icone, .insta-icone, .tiktok-icone{
+    height: 20px;
+}
+
