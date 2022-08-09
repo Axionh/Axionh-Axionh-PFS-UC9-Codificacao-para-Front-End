@@ -2,7 +2,7 @@
 .cabecalho{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: black;
 }
 
@@ -23,9 +23,29 @@
 
 /* INFORMAÇÕES DA MAIN */
 main{
-    /* background: linear-gradient(rgb(51, 51, 213), rgb(250, 250, 252) 75%); */
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(51, 51, 213), rgb(250, 250, 252) 75%);
 }
 
+.cadastro{
+    padding-top: 10px ;
+}
+
+.cadastro input{
+    margin: 5px 0 20px 0;
+    padding: 5px 0px 0px 0px;
+    font-size: 20px;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgb(23, 22, 22);
+}
+
+.cadastro label{
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+}
 
 /* INFORMAÇÕES DO FOOTER */
 .rodape{

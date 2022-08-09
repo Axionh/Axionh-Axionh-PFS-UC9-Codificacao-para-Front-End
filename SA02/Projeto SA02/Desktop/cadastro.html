@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
     <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/estiloslogin.css">
+    <link rel="stylesheet" href="CSS/estiloscadastro.css">
 </head>
 
 <body>
@@ -18,20 +18,30 @@
             <div class="cabecalho_logotipo">
                 <a href="index.html">
                     <img src="Imagens/logo (1).jpg" alt="Logotipo" class="cabecalho_logo">
-                </a>    
-                <p class="cabecalho_slogan">A sua central de eletrônicos e diversão</p>
+                </a>
             </div>
         </nav>
     </header>
     <main>
-        <div class="formulario">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-            <input type="text">
-        </div>
-        
+        <form class="cadastro" action="get">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="NomeCompleto" placeholder="Insira seu nome..." required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Insira seu e-mail..." required><br>
+            <label for="dados">CPF ou RG:</label>
+            <input type="text" id="dados" name="CPF" placeholder="Insira seu CPF ou RG..." required><br>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="Endereco" placeholder="Rua..." required><br>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="Cidade" placeholder="Qual sua cidade?" required><br>
+            <label for="UF">Estado:</label>
+            <input type="text" id="UF" name="Estado" placeholder="Qual seu Estado?" required><br>
+            <label for="dataNasc">Data de nascimento:</label>
+            <input type="date" name="nascimento" required><br>
+            <label for="senha">Digite sua senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua Senha" required><br>
+            <input type="submit" name="Enviar">
+        </form>
     </main>
     <footer>
         <nav class="rodape">
