@@ -65,7 +65,8 @@ a:hover{
 .cabecalho-categorias{
     display: flex;
     justify-content: space-evenly;
-    background-color: rgb(51, 51, 213);
+    /* background-color: rgb(51, 51, 213); */
+    background-color: #000000;
 }
 
 .cabecalho-categorias p{
@@ -81,9 +82,10 @@ a:hover{
 
 /* INFORMAÇÕES DA MAIN */
 main{
-    background: linear-gradient(rgb(51, 51, 213), rgb(250, 250, 252) 50%);
+    /* background: linear-gradient(rgb(51, 51, 213), rgb(250, 250, 252) 50%); */
 }
 
+/* INFORMAÇÕES DO BANNER */
 .banner{
     height: 200px;
     width: 100%;
@@ -96,13 +98,64 @@ main{
     margin: 0 0 0 0;
 }
 
-/* INFORMAÇÕES DOS PRODUTOS */
-.produtos{
+/* INFORMAÇÕES DO DESTAQUE */
+.destaques-chamada{
+    color: #000000;
+    text-align: center;
+    font-size: 35px;
+}
+
+hr{
+    border: 1px solid black;
+    margin: 0 0 0 0;
+}
+
+.destaques{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0 50px 30px 100px;
     margin-top: 10px;
+}
+
+.destaques p{
+    text-align: center;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* text-shadow: #000000 1px 1px 0px; */
+}
+
+.destaques img{
+    margin-top: 10px;
+}
+
+/* .produtos p:hover{
+    text-decoration: underline;
+} */
+
+.destaques img{
+    height: 150px;
+    width: 150px;
+}
+
+.destaques img:hover{
+    transform: scale(1.05);
+    border: #463ae1 solid 1px;
+}
+
+.destaques img{
+    border: #000000 solid 1px;
+}
+
+/* INFORMAÇÕES DOS PRODUTOS */
+.produtos{
+    background: linear-gradient(rgb(74, 145, 226), rgb(250, 250, 252) 50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 50px 30px 100px;
+    margin-top: 0px;
 }
 
 .produtos p{
