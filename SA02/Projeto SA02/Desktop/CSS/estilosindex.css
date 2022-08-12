@@ -115,7 +115,11 @@ hr{
     flex-direction: column;
     justify-content: space-between;
     padding: 0 50px 30px 100px;
-    margin-top: 10px;
+    background: linear-gradient(rgb(0, 0, 0), rgb(74, 145, 226) 80%);
+}
+
+.destaques-chamada{
+    color: #e5e4e4;
 }
 
 .destaques p{
@@ -128,6 +132,7 @@ hr{
 
 .destaques img{
     margin-top: 10px;
+    background-color: #ffffff;
 }
 
 /* .produtos p:hover{
