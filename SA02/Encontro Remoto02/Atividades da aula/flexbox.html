@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;/*em que direção colocar os itens*/
+            flex-wrap: wrap; /*quebra o conteúdo para a linha abaixo*/
+            justify-content:space-between ;/*alinhamento horizontal*/
+            align-items: stretch;/*alinhamento vertical*/
+            margin: 0 auto;
+            border: 1px solid green;
+            width: 500px;
+            height: 600px;
+        }
+
+        .paragrafos{
+            height: 100px;
+            width: 100px;
+            background-color: salmon;
+            border: 1px solid purple;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #p-um{
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <p class="paragrafos" id="p-um">
+            paragrafo1
+        </p>
+
+
+        <p class="paragrafos">paragrafo2</p>
+        <p class="paragrafos">paragrafo3</p>
+        <p class="paragrafos">paragrafo1</p>
+        <p class="paragrafos">paragrafo2</p>
+        <p class="paragrafos">paragrafo3</p>
+        <p class="paragrafos">paragrafo1</p>
+        <p class="paragrafos">paragrafo2</p>
+        <p class="paragrafos">paragrafo3</p>
+        <p class="paragrafos">paragrafo1</p>
+        <p class="paragrafos">paragrafo2</p>
+        <p class="paragrafos">paragrafo3</p>
+        <p class="paragrafos">paragrafo1</p>
+        <p class="paragrafos">paragrafo2</p>
+        <p class="paragrafos">paragrafo3</p>
+    </div>
+
+</body>
+
+</html>
