@@ -27,8 +27,28 @@ main{
 }
 
 
+.dados-login{
+    padding-top: 10px ;
+}
+
+.dados-login input{
+    margin: 5px 0 20px 0;
+    padding: 5px 0px 0px 0px;
+    font-size: 20px;
+    width: 100%;
+    box-shadow: 5px 5px 10px rgb(23, 22, 22);
+}
+
+.dados-login label{
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: bold;
+    color:#000000;
+}
+
 /* INFORMAÇÕES DO FOOTER */
-.rodape{
+.rodape {
     display: flex;
     background-color: #000000;
     color: #ffffff;
