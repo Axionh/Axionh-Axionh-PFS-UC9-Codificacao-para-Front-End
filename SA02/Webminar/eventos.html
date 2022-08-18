@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos JS</title>
+</head>
+
+<body>
+    <input type="text" onkeyup="exibirCaracter(this.value)">
+    <button onclick="saudar()">Saudar</button>
+    <p id="digitados"></p>
+    <script>
+        function exibirCaracter(char) {
+            console.log(char);
+            //paragrafos com id 'digitados'. DIgita na caixa acima e vai para o p
+            document.getElementById('digitados').innerText=char
+        }
+
+        function saudar() {
+            alert('Ola amigos')
+        }
+    </script>
+</body>
+
+</html>
