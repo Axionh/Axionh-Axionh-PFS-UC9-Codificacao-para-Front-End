@@ -19,6 +19,11 @@
     box-sizing: border-box;
 }
 
+.container-grid{
+    width: 1200px;
+    margin: 0 auto;
+}
+
 header{
     background-color: black;
     padding: 20px;
@@ -46,10 +51,6 @@ header .menu a{
     font-weight: 300;
 }
 
-.container-grid{
-    width: 1200px;
-    margin: 0 auto;
-}
 
 .header-flex{
     display: flex;
@@ -70,10 +71,9 @@ header .menu a{
 
 .produtos .banner-flex{
     display: flex;
-    flex-direction: column;
     justify-content: flex-end;
     align-items: center;
-    height: 600px;
+    height: 600px; 
 }
 
 .produtos .banner-info{
@@ -81,22 +81,22 @@ header .menu a{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 350px;
-    width: 270px;
+    width: 350px;
+    height: 270px;
     color: white;
     border: 1px solid white;
 }
 
 .produtos .banner-info h1{
-    font-family: Titilium-Regular;
+    font-family: "Titilium-Regular";
     font-size: 42px;
     text-align: center;
 }
 
 .produtos .banner-info p{
-    font-family: Roboto-light;
-    font-size: 18px;
+    font-family: 'Roboto-Light';
     text-align: center;
+    font-size: 18px;
 }
 
 .produtos .banner-info a{
@@ -105,14 +105,11 @@ header .menu a{
     align-items: center;
     width: 220px;
     height: 50px;
-    background-color: red;
-    font-family: Roboto-light;
-    border: 1px solid red;
+    background-color: #c31616;
     border-radius: 10px;
+    border: 1px solid #c31616;
+    font-family: 'Roboto-Light';
     color: white;
     text-decoration: none;
     text-transform: uppercase;
-    
 }
-
-
