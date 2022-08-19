@@ -1,14 +1,32 @@
 /* Informaçoes do HEADER */
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+a:hover{
+    text-decoration: underline;
+    color:  rgba(255, 255, 255, 0.6);
+}
+
 .cabecalho{
     display: flex;
     align-items: center;
     justify-content: center;
+    align-items: center;
     background-color: black;
 }
 
 .cabecalho_logotipo{
     display: flex;
     align-items: center;
+}
+
+.cabecalho_logotipo p{
+    font-size: 18px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .cabecalho_logo{
@@ -23,11 +41,21 @@
 
 /* INFORMAÇÕES DA MAIN */
 main{
-    /* background: linear-gradient(rgb(51, 51, 213), rgb(250, 250, 252) 75%); */
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0 50px 0;
+    height: 40vw;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgb(51, 51, 213), rgb(250, 250, 252) 75%);
+    background-image: url(../Fundos/Fundo\ video\ game.webp);
+    background-size: 100% 180%;
+    background-position: center;
 }
 
 
 .dados-login{
+    width: 50%;
     padding-top: 10px ;
 }
 
@@ -36,6 +64,8 @@ main{
     padding: 5px 0px 0px 0px;
     font-size: 20px;
     width: 100%;
+    height: 30px;
+    /* margin: 50px 0 50px 0; */
     box-shadow: 5px 5px 10px rgb(23, 22, 22);
 }
 
@@ -44,7 +74,7 @@ main{
     margin: 0 auto;
     font-size: 20px;
     font-weight: bold;
-    color:#000000;
+    color:#ffffff;
 }
 
 /* INFORMAÇÕES DO FOOTER */
