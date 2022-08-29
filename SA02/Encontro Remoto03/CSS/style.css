@@ -19,34 +19,27 @@
     box-sizing: border-box;
 }
 
-
 .container-grid{
     width: 1200px;
     margin: 0 auto;
-    /* border: 1px solid salmon; */
 }
 
 header{
-    padding: 20px;
-    height: 80px;
-    background-color: black;
-}
-
-.header-flex{
     display: flex;
+    background-color: black;
+    padding: 20px;
     justify-content: space-between;
-    align-items: center;
-    height: 80px;
 }
 
 header .logo{
     width: 280px;
+
 }
 
 header .menu{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     width: 60%;
     max-width: 680px;
 }
@@ -60,6 +53,16 @@ header .menu a{
     font-weight: 300;
 }
 
+header .menu-bar{
+    display: none;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
 
 /* sectin produtos */
 
@@ -86,7 +89,6 @@ header .menu a{
     width: 350px;
     height: 270px;
     color: white;
-    border: 1px solid white;
 }
 
 .produtos .banner-info h1{
@@ -115,3 +117,46 @@ header .menu a{
     text-decoration: none;
     text-transform: uppercase;
 }
+
+/* Tables de 768 até 992 */
+@media screen and (max-width: 991px) {
+    header{
+        padding: 0 20px;
+    }
+    
+    /* navbar */
+
+    header .menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 80vw;
+        height: 100vw;
+        
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        background-color: #c31616;
+        color: white;
+
+        border-radius: 0 0 0 80px;
+    }
+ /* links da navbar */
+    header .menu a{
+        border-left: 3px dotted lightgray;
+        width: 80%;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        padding: 20px;
+        color: lightgrey;
+    }
+
+    header .menu-bar{
+        display: block;
+        width: 45px;
+    }
+    
+}
+
