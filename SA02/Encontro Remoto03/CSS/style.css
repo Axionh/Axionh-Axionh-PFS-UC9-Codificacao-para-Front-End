@@ -1,150 +1,203 @@
-/*Importar fonte*/
+/* import de fontes */
+/* 
+
+    Utilizar o Dev Tools
+
+    Responsividade
+    Bootstrap
+
+
+*/
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+}
 
 @font-face {
-    font-family: Roboto-thin;
-    src: url(../fontes/ROBOTO/Roboto-Thin.ttf);
-}
-@font-face {
-    font-family: Roboto-light;
-    src: url(../fontes/ROBOTO/Roboto-Light.ttf);
-}
-@font-face{
-    font-family: TItilium-Regular;
-    src: url(../fontes/TitiliumWed/TitilliumWeb-Regular.ttf);
+    font-family: "Roboto-Light";
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
 }
 
-*{
+@font-face {
+    font-family: "TitilliumWeb-Regular";
+    src: url(../fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+
+/* CSS Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container-grid{
-    width: 1200px;
+body {
+    font-family: "Roboto-Light", sans-serif;
+}
+
+/* DESKTOP FIRST ( 992px até o infinito )*/
+.container-gid {
+    max-width: 1200px;
     margin: 0 auto;
+    /* border: 1px solid salmon; */
 }
 
-header{
-    display: flex;
+
+/* CUSTOMIZAÇÃO DO BOOTSTRAP */
+.container, .container-fluid, .container-gid {
+    /* border: 1px solid red; */
+}
+.mostra-coluna {
+    border: 2px solid green;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+
+
+
+/* ************* PRODUTOS ************* */
+header {
+    height: 80px;
     background-color: black;
-    padding: 20px;
-    justify-content: space-between;
 }
 
-header .logo{
-    width: 280px;
-
-}
-
-header .menu{
-    display: flex;
-    justify-content: space-between;
-    /* align-items: center; */
-    width: 60%;
-    max-width: 680px;
-}
-
-header .menu a{
-    color: white;
-    text-transform: uppercase;
-    text-decoration: none;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    font-family: Roboto-light;
-    font-weight: 300;
-}
-
-header .menu-bar{
-    display: none;
-}
-
-.header-flex{
+.header-flex {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
 }
 
-/* sectin produtos */
+header .logo {
+    width: 280px;
+    /* border: 2px solid white; */
+}
 
-.produtos{
+/* navbar */
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    max-width: 680px;
+    /* border: 2px solid red; */
+}
+
+header .menu a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+}
+
+header .menu-bar {
+    display: none;
+}
+
+
+/* ***************** PRODUTOS ***************** */
+/* section produtos */
+.produtos {
     width: 100%;
     height: 600px;
     background-color: brown;
-    background-image: url(../Imagens/banner_pilotos.png);
+
+    background-image: url(../images/banner_pilotos.png);
     background-repeat: no-repeat;
+    /* background-size: 100%; */
 }
 
-.produtos .banner-flex{
+.produtos .banner-flex {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 600px; 
+    height: 600px;
 }
 
-.produtos .banner-info{
+.produtos .banner-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
     width: 350px;
     height: 270px;
     color: white;
+    /* border: 1px solid white; */
 }
 
-.produtos .banner-info h1{
-    font-family: "Titilium-Regular";
+.produtos .banner-info h1 {
+    font-family: "TitilliumWeb-Regular";
     font-size: 42px;
     text-align: center;
+
 }
 
-.produtos .banner-info p{
-    font-family: 'Roboto-Light';
+.produtos .banner-info p {
+    font-family: "Roboto-Light";
     text-align: center;
     font-size: 18px;
+
 }
 
-.produtos .banner-info a{
+.produtos .banner-info a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 220px;
+
+    width: 200px;
     height: 50px;
-    background-color: #c31616;
+    font-family: "Roboto-Light";
+    background-color: #C31616;
+
+    border: 1px solid #C31616;
     border-radius: 10px;
-    border: 1px solid #c31616;
-    font-family: 'Roboto-Light';
+
     color: white;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-/* Tables de 768 até 992 */
+/* CSS: https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+.mostraMenu {
+    left: 0 !important;
+    opacity: 0.98 !important;
+}
+
+/* TABLETS < 992px (768px  até 991px)  */
 @media screen and (max-width: 991px) {
-    header{
+    header {
         padding: 0 20px;
     }
-    
-    /* navbar */
 
-    header .menu{
-        position: fixed;
+    /* navbar container flex*/
+    header .menu {
+        position: fixed;/* fixa na viewoport */
         top: 0;
-        left: 0;
+        left: -80%;/* inicialmente escondido */
 
-        width: 80vw;
-        height: 100vw;
-        
+        opacity: 0;/*inicialmente invisível*/
+        width: 80%;
+        height: 100vh;
+
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        flex-direction: column;
 
-        background-color: #c31616;
+        background-color: #C31616;
         color: white;
 
         border-radius: 0 0 0 80px;
+
+        transition: left 0.5s, opacity 0.6s;
     }
- /* links da navbar */
-    header .menu a{
+
+    /* links do menu */
+    header .menu a {
         border-left: 3px dotted lightgray;
         width: 80%;
         font-size: 1.3rem;
@@ -153,10 +206,32 @@ header .menu-bar{
         color: lightgrey;
     }
 
-    header .menu-bar{
+    /*hamburger */
+    header .menu-bar {
         display: block;
         width: 45px;
     }
-    
 }
 
+/* SMARTPHONES  < 768 (0 até 767px)*/
+@media screen and (max-width: 767px) {
+    header .logo {
+        width: 200px;
+    }
+
+    /* navbar */
+    header .menu {
+
+        border-radius: 0 0 0 60px;
+    }
+
+    header .menu a {
+        border-left: 2px dotted lightgray;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    header .menu-bar {
+        width: 30px;
+    }
+}

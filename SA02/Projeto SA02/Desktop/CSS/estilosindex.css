@@ -17,6 +17,18 @@ a:hover{
     background-color: black;
 }
 
+header{
+    background-color: #000000;
+}
+
+/* Item da versãopara tablet */
+header .header-categorias-tablet{
+    display: none;
+}
+header .menu-lateral{
+    display: none;
+}
+
 .cabecalho_logotipo{
     display: flex;
     align-items: center;
@@ -78,6 +90,10 @@ a:hover{
 
 .cabecalho-categorias p:hover{
     color: aqua;
+}
+
+header .menu-bar {
+    display: none;
 }
 
 /* INFORMAÇÕES DA MAIN */
@@ -245,4 +261,93 @@ hr{
 .face-icone, .insta-icone, .tiktok-icone{
     height: 30px;
 }
+
+/* TABLETS < 992px (768px  até 991px)  */
+@media screen and (max-width: 991px) {
+header {
+   padding: 0 20px;
+}
+
+/* navbar container flex*/
+header .menu {
+    position: fixed;/* fixa na viewoport */
+    top: 0;
+    left: -80%;/* inicialmente escondido */
+
+    opacity: 0;/*inicialmente invisível*/
+    width: 80%;
+    height: 100vh;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #C31616;
+    color: white;
+
+    border-radius: 0 0 0 80px;
+
+    transition: left 0.5s, opacity 0.6s;
+}
+
+ /* links do menu */
+ header .cabecalho-categorias a {
+    border-left: 3px dotted lightgray;
+    width: 80%;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    padding: 20px;
+    color: lightgrey;
+}
+
+/*hamburger */
+header .menu-bar {
+    display: block;
+    width: 45px;
+}
+
+header .cabecalho_carrinho{
+    display: none;
+}
+
+header .cabecalho_dados, .cabecalho-categorias{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+header .menu-lateral{
+    display: block;
+    top: 0px;
+    left: 0px;
+    width: 60vw;
+    height: 100vw;
+    position: fixed;
+    background-color: black
+}
+
+header .links-menu-lateral{
+    display: flex;
+    height: 100vw;
+}
+
+
+header .links-menu-lateral li{
+    text-transform: uppercase;
+    margin: 20px 0 20px 50px;
+    /* margin: 20px 20px; */
+    border-left: 2px dotted white;
+    padding: 10px 10px 10px 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+}
+    
+
+
 
