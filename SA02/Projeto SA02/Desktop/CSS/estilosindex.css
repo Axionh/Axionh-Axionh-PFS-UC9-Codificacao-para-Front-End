@@ -121,11 +121,6 @@ main{
     font-size: 35px;
 }
 
-hr{
-    border: 1px solid black;
-    margin: 0 0 0 0;
-}
-
 .destaques{
     display: flex;
     flex-direction: column;
@@ -133,6 +128,11 @@ hr{
     padding: 0 50px 30px 100px;
     /* background: linear-gradient(rgb(0, 0, 0), rgb(74, 145, 226) 80%); */
 }
+hr{
+    border: 1px solid black;
+    margin: 0 0 0 0;
+}
+
 
 .destaques-chamada{
     color: #e5e4e4;
@@ -262,6 +262,8 @@ hr{
     height: 30px;
 }
 
+/*  */
+/*  */
 /* TABLETS < 992px (768px  até 991px)  */
 @media screen and (max-width: 991px) {
 header {
@@ -313,6 +315,7 @@ header .cabecalho_carrinho{
 header .cabecalho_dados, .cabecalho-categorias{
     display: none;
 }
+
 a{
     text-decoration: none;
     color: #ffffff;
@@ -320,17 +323,17 @@ a{
 }
 
 header .menu-lateral{
-    display: block;
+    display: flex;
     top: 0px;
     left: 0px;
     width: 60vw;
     height: 100vw;
     position: fixed;
-    background-color: black
+    background-color: black;
+    /* border-radius: 100px; */
 }
 
 header .links-menu-lateral{
-    display: flex;
     height: 100vw;
 }
 
@@ -344,10 +347,22 @@ header .links-menu-lateral li{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.destaques{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 50px 30px 100px;
+    /* background: linear-gradient(rgb(0, 0, 0), rgb(74, 145, 226) 80%); */
+}
 
 
 }
-    
 
+/*  */
+/*  */
+/* TABLETS > 768px  */
+@media screen and (max-width: 767px) {
 
+}
 

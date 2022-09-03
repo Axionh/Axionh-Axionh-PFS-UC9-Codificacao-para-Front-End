@@ -1,0 +1,245 @@
+header {
+    background-color: black;
+    height: 155px;
+    width: 100vw;
+}
+
+
+/* Configuraçãos da navegação principal */
+.principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    height: 115px;
+    width: 100vw;
+}
+
+
+.logotipo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logotipo p {
+    width: 120px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#divBusca {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border: solid 1px;
+    border-radius: 10px;
+    width: 40vw;
+    height: 35px;
+    margin-left: -50px;
+}
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-style: italic;
+    font-size: 18px;
+    border: none;
+    height: 32px;
+    width: 260px;
+}
+
+#divBusca img {
+    height: 40px;
+}
+
+.cliente {
+    display: flex;
+    align-items: center;
+}
+
+.login {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.login a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.carrinho {
+    padding-right: 20px;
+}
+
+.login p {
+    margin-bottom: 15px;
+}
+
+.carrinho img {
+    height: 60px;
+}
+
+
+/* Início das categorias */
+.categorias {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40px;
+    width: 100vw;
+    background-color: rgb(0, 0, 0);
+    padding-right: 10px;
+}
+
+.categorias a {
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px black;
+}
+
+.categorias p :hover {
+    color: aquamarine;
+    font-size: 21px;
+}
+
+/* Banner */
+.banner {
+    /* background-color: orange; */
+    width: 100vw;
+    height: 300px;
+}
+
+.banner img {
+    width: inherit;
+    height: inherit;
+}
+
+/* Destaques */
+main h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin: 30px 0 30px 0;
+}
+
+.destaques {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 30px 50px;
+}
+
+
+.destaques img {
+    height: 200px;
+    width: 200px;
+}
+
+.destaques p {
+    text-align: center;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* text-shadow: #000000 1px 1px 0px; */
+}
+
+
+/* GALERIA */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 30px 50px;
+}
+
+
+.galeria img {
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+}
+
+.galeria p {
+    text-align: center;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* text-shadow: #000000 1px 1px 0px; */
+}
+
+/* INFORMAÇÕES DO FOOTER */
+.rodape {
+    display: flex;
+    background-color: #000000;
+    color: #ffffff;
+    height: 55px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rodape-logo {
+    height: 50px;
+}
+
+.rodape-contato {}
+
+.rodape-contato li {
+    text-align: center;
+}
+
+.rodapre-localizacao {}
+
+.rodape-localizacao li,
+h2 {
+    text-align: center
+}
+
+.rodape-duvidas {}
+
+.rodape-duvidas li {
+    text-align: center
+}
+
+.rodape-politica {
+    text-align: center
+}
+
+.rodape-redes-icones {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.face-icone,
+.insta-icone,
+.tiktok-icone {
+    height: 30px;
+}
+
+
+/* Tablets <992 e >768 */
+/* @media screen and (max-width: 991px){
+        .destaques{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0 50px 30px 100px;
+    }
+
+}
+     */
