@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GameMania</title>
-    <link rel="stylesheet" href="../CSS/reset.css">
-    <link rel="stylesheet" href="../CSS/styleindex.css">
-</head>
-
-<body>
-    <header>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GameMania</title>
+        <link rel="stylesheet" href="../CSS/reset.css">
+        <link rel="stylesheet" href="../CSS/styleindex.css">
+    </head>
+    
+    <body>
+        <header>
+        <div class="menu-lateral">
+            <a href="./login.html"><p>Login</p></a>
+            <a href="./cadastro.html"><p>Cadastro</p></a>
+            <p><a href="">Playstation</a></p>
+            <p><a href="">Xbox</a></p>
+            <p><a href="">PC</a></p>
+            <p><a href="">Games</a></p>
+            <p><a href="">Acessórios</a></p>
+        </div>
         <nav>
             <div class="principal">
                 <div class="logotipo">
@@ -24,16 +33,15 @@
                 </div>
                 <div class="cliente">
                     <div class="login">
-                        <a href="./login.html">
-                            <p>Login</p>
-                        </a>
-                        <a href="./cadastro.html">
-                            <p>Cadastro</p>
-                        </a>
+                        <a href="./login.html"><p>Login</p></a>
+                        <a href="./cadastro.html"><p>Cadastro</p></a>
                     </div>
                     <div class="carrinho">
                         <img src="../Imagens/carrinho.png" alt="">
                     </div>
+                </div>
+                <div class="hamburguer" onclick="menulateralmostrar()"  >
+                    <img src="../Imagens/bars.svg" alt="">
                 </div>
             </div>
             <div class="categorias">
@@ -169,6 +177,7 @@
         </section>
 
     </main>
+   
     <footer>
         <nav class="rodape">
             <div class="rodape-logotipo">
@@ -213,6 +222,7 @@
 
         </nav>
     </footer>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
