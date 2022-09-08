@@ -141,18 +141,21 @@ main h1 {
     max-width: 1200px;
 }
 .mostrar-coluna{
-    border: 2px solid red;
+    
 }
 
 .container, .container-fluid, .container-gid {
-    border: 1px solid red;
+    
 }
+
+
 
 .destaques {
     background-color: white;
 }
 
 .destaques .card{
+    margin-top: 20px;
 }
 .destaques .card-title{
     text-align: center;
