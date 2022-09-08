@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GameMania</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/styleindex.css">
 </head>
@@ -38,8 +39,12 @@
                 <div class="hamburguer" onclick="menulateralmostrar()">
                     <img src="../Imagens/bars.svg" alt="">
                     <div id="navMenu" class="menu-lateral">
-                        <a href="./login.html"><p>Login</p></a>
-                        <a href="./cadastro.html"><p>Cadastro</p></a>
+                        <a href="./login.html">
+                            <p>Login</p>
+                        </a>
+                        <a href="./cadastro.html">
+                            <p>Cadastro</p>
+                        </a>
                         <p><a href="">Playstation</a></p>
                         <p><a href="">Xbox</a></p>
                         <p><a href="">PC</a></p>
@@ -58,11 +63,72 @@
         </nav>
     </header>
     <main>
-        <section class="banner">
-            <img src="../Banners/banner01.png" alt="">
-        </section>
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <!-- a class carousel inner deve ser modificada para ficar com 100vw -->
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="../Banners/banner01.png" class="d-block w-100" alt="Banner do CS">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="../Banners/banner02.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
         <H1>Destaques</H1>
+        <!-- <section class="destaques">
+            <div>
+                <img src="../Imagens/PS5.webp" alt="PS5"></th>
+                <p>PS5</p>
+                <p>R$ 4.349,99</p>
+            </div>
+            <div>
+                <img src="../Imagens/teclado.jpg" alt="Teclado retroiluminado">
+                <p>Teclado Gamer</p>
+                <p>R$ 156,99</p>
+            </div>
+            <div>
+                <img src="../Imagens/forza xbox.webp" alt="Forza Xbox">
+                <p>Forza Horizon XBOX</p>
+                <p>R$ 99,99</p>
+            </div>
+            
+            <div>
+                <img src="../Imagens/pc Gamer.jpg" alt="PcGamer">
+                <p>PC Gamer</p>
+                <p>R$ 3.399,99</p>
+            </div>
+        </section> -->
+        
         <section class="destaques">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-3 mostrar-coluna">
+                        <div class="card" style="width: 18rem;">
+                            <img src="../Imagens/battlefield ps4.jpeg" class="card-img-top" alt="...">
+                            
+                            <div class="card-body">
+                            <h5 class="card-title">BattleField 2042</h5>
+                            <p class="card-text">R$90,00</p>
+                            <a href="#" class="btn btn-danger btn-buy">Comprar</a>
+                            </div>
+                        </div>                 
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <H1>Galeria</H1>
+        <section class="produtos">
             <div>
                 <img src="../Imagens/PS5.webp" alt="PS5"></th>
                 <p>PS5</p>
@@ -84,100 +150,59 @@
                 <p>PC Gamer</p>
                 <p>R$ 3.399,99</p>
             </div>
-        </section>
-        <H1>Galeria</H1>
-        <section class="galeria">
-            <!-- verificar para modificar o flex, esta em collun -->
+
             <div>
-                <div>
-                    <img src="../Imagens/PS5.webp" alt="PS5"></th>
-                    <p>PS5</p>
-                    <p>R$ 4.349,99</p>
-                </div>
-                <div>
-                    <img src="../Imagens/teclado.jpg" alt="Teclado retroiluminado">
-                    <p>Teclado Gamer</p>
-                    <p>R$ 156,99</p>
-                </div>
-                <div>
-                    <img src="../Imagens/forza xbox.webp" alt="Forza Xbox">
-                    <p>Forza Horizon XBOX</p>
-                    <p>R$ 99,99</p>
-                </div>
-                <div>
-                    <img src="../Imagens/pc Gamer.jpg" alt="PcGamer">
-                    <p>PC Gamer</p>
-                    <p>R$ 3.399,99</p>
-                </div>
+                <img src="../Imagens/pc Gamer.jpg" alt="PcGamer">
+                <p>PC Gamer</p>
+                <p>R$ 3.399,99</p>
             </div>
 
             <div>
-                <div>
-                    <img src="../Imagens/mini nintendo retro.jpeg" alt="Nintendo retro"></th>
-                    <p>SNES Retro</p>
-                    <p>R$ 249,99</p>
-                </div>
-                <div>
-                    <img src="../Imagens/switch lite.jpeg" alt="Switch Lite"></th>
-                    <p>Switch Lite</p>
-                    <p>R$ 2.456,99</p>
-                </div>
-                <div>
-                    <img src="../Imagens/pendrive 32gb.jpeg" alt="Pendrive"></th>
-                    <p>Pendrive 32 GB</p>
-                    <p>R$ 59,99</p>
-                </div>
-                <div>
-                    <img src="../Imagens/switch oled.jpeg" alt="Switch Oled"></th>
-                    <p>Switch Oled</p>
-                    <p>R$ 2.899,99</p>
-                </div>
+                <img src="../Imagens/pc Gamer.jpg" alt="PcGamer">
+                <p>PC Gamer</p>
+                <p>R$ 3.399,99</p>
             </div>
 
             <div>
-                <div>
-                    <img src="../Imagens/arcado joystick.jpeg" alt="Arcade Joystick"></th>
-                    <p>Controle Arcade</p>
-                    <p>R$ 299,99</p>
-                </div>
-                <div>
-                    <img src="../Imagens/battlefield ps4.jpeg" alt="Battlefield PS4"></th>
-                    <p>Battlefield PS4</p>
-                    <p>R$ 135,99</p>
-                </div>
-                <div>
-                    <img src="../Imagens/brick game.jpeg" alt="Brick Game"></th>
-                    <p>Brick Game</p>
-                    <p>R$ 95,99</p>
-                </div>
-                <div>
-                    <img src="../Imagens/controlexbox.jpg" alt="Controel Xbox"></th>
-                    <p>Controle XBOX</p>
-                    <p>R$ 275,99</p>
-                </div>
+                <img src="../Imagens/pc Gamer.jpg" alt="PcGamer">
+                <p>PC Gamer</p>
+                <p>R$ 3.399,99</p>
             </div>
 
             <div>
-                <div>
-                    <img src="../Imagens/placa de videos phoenix gtx 6gb.jpeg" alt="placa de video"></th>
-                    <p>GTX 6gb</p>
-                    <p>R$ 1.799,99</p>
-                </div>
-                <div>
-                    <img src="../Imagens/battlefield xbox.jpeg" alt="Battlefield XBOX"></th>
-                    <p>Battlefield XBOX</p>
-                    <p>R$ 125,99</p>
-                </div>
-                <div>
-                    <img src="../Imagens/controle ps5.jpeg" alt="Controle PS5"></th>
-                    <p>Controle PS5
-                    <p>R$ 278,99</p>
-                </div>
-                <div>
-                    <img src="../Imagens/xbox series x.jpg" alt="Xbox SeriesX"></th>
-                    <p>Xbox SeriesX</p>
-                    <p>R$ 4.599,99</p>
-                </div>
+                <img src="../Imagens/pc Gamer.jpg" alt="PcGamer">
+                <p>PC Gamer</p>
+                <p>R$ 3.399,99</p>
+            </div>
+
+            <div>
+                <img src="../Imagens/pc Gamer.jpg" alt="PcGamer">
+                <p>PC Gamer</p>
+                <p>R$ 3.399,99</p>
+            </div>
+
+            <div>
+                <img src="../Imagens/mini nintendo retro.jpeg" alt="Nintendo retro"></th>
+                <p>SNES Retro</p>
+                <p>R$ 249,99</p>
+            </div>
+
+            <div>
+                <img src="../Imagens/switch lite.jpeg" alt="Switch Lite"></th>
+                <p>Switch Lite</p>
+                <p>R$ 2.456,99</p>
+            </div>
+
+            <div>
+                <img src="../Imagens/pendrive 32gb.jpeg" alt="Pendrive"></th>
+                <p>Pendrive 32 GB</p>
+                <p>R$ 59,99</p>
+            </div>
+
+            <div>
+                <img src="../Imagens/switch oled.jpeg" alt="Switch Oled"></th>
+                <p>Switch Oled</p>
+                <p>R$ 2.899,99</p>
             </div>
         </section>
 
@@ -230,4 +255,11 @@
     <script src="../js/script.js"></script>
 </body>
 
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </html>
+
+

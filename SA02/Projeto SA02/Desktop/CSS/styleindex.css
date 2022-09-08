@@ -123,6 +123,11 @@ header {
 }
 
 /* Destaques */
+/* body{
+    background-image: linear-gradient(rgb(73, 73, 229) ,rgb(255, 255, 255)50%, rgb(73, 73, 229) 120% );
+} */
+
+
 main h1 {
     text-transform: uppercase;
     font-size: 40px;
@@ -132,27 +137,48 @@ main h1 {
     margin: 30px 0 30px 0;
 }
 
+/* Destaques */
+.container {
+    max-width: 1200px;
+}
+.mostrar-coluna{
+    border: 2px solid red;
+}
+
+.container, .container-fluid, .container-gid {
+    border: 1px solid red;
+}
+
 .destaques {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px 30px 50px;
+    background-color: white;
 }
 
-
-.destaques img {
-    height: 200px;
-    width: 200px;
+.destaques .card{
 }
-
-.destaques p {
+.destaques .card-title{
     text-align: center;
-    margin-bottom: 5px;
     text-transform: uppercase;
     font-weight: bold;
-    /* text-shadow: #000000 1px 1px 0px; */
+    font-size: 20x;
+    font-family: Arial, Helvetica, sans-serif;
 }
+
+.destaques .card-text{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20x;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.destaques .card .btn-buy{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000000;
+    width: 100%;
+    border: none;
+
+}
+
+/* ----------------------------------------------- */
 
 
 /* GALERIA */
@@ -165,6 +191,7 @@ main h1 {
 }
 
 
+
 .galeria img {
     height: 200px;
     width: 200px;
@@ -172,6 +199,27 @@ main h1 {
 }
 
 .galeria p {
+    text-align: center;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    /* text-shadow: #000000 1px 1px 0px; */
+}
+
+.produtos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 50px 30px 50px;
+}
+.produtos img {
+    height: 250px;
+    width: 250px;
+    margin: 20px 20px 20px 20px;
+}
+
+.produtos p {
     text-align: center;
     margin-bottom: 5px;
     text-transform: uppercase;
@@ -232,7 +280,7 @@ h2 {
 /* Icones escondidos no desktop */
 .hamburguer{
     display: none;
-    width: 45px;
+    width: 60px;
 }
 .menu-lateral{
     display: none;
@@ -258,22 +306,27 @@ h2 {
         display: block;
         padding-right: 20px;
     }
-    .menu-lateral{
+    header .menu-lateral{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        left: -80vw;
+        left: -80vw; /*inicia escondido*/
+        opacity: 0;
         top: 0vw;
         position: fixed;
         height: 100%;
         width: 75vw;
         background-color: black;
         padding-left: 20px;
+        transition: left 0.5s, opacity 0.6s; /*controla a transição do menu*/
+        z-index: 2;
     }
-    .menu-lateral-mostrar{
+    header .menu-lateral-mostrar{
+        z-index: 2;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        opacity: 1;
         left: 0vw;
         top: 0vw;
         position: fixed;
@@ -309,3 +362,9 @@ h2 {
 
 
 /* Smartphones <767 */
+
+
+/* Customização do bootstrap */
+.carousel-inner{
+    width: 100vw;
+}
