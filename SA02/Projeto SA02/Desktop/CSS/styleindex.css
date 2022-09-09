@@ -136,17 +136,20 @@ main h1 {
     margin: 30px 0 30px 0;
 }
 
-/* Destaques */
+/* Destaques e Galeria */
 .container {
     max-width: 1200px;
 }
+/* 
+Dimensões do container
+
 .mostrar-coluna{
     
 }
 
 .container, .container-fluid, .container-gid {
     
-}
+} */
 
 
 
@@ -181,53 +184,6 @@ main h1 {
 }
 
 /* ----------------------------------------------- */
-
-
-/* GALERIA */
-.galeria {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 50px 30px 50px;
-}
-
-
-
-.galeria img {
-    height: 200px;
-    width: 200px;
-    margin-top: 30px;
-}
-
-.galeria p {
-    text-align: center;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    /* text-shadow: #000000 1px 1px 0px; */
-}
-
-.produtos{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 0 50px 30px 50px;
-}
-.produtos img {
-    height: 250px;
-    width: 250px;
-    margin: 20px 20px 20px 20px;
-}
-
-.produtos p {
-    text-align: center;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    font-weight: bold;
-    /* text-shadow: #000000 1px 1px 0px; */
-}
 
 /* INFORMAÇÕES DO FOOTER */
 .rodape {
@@ -278,7 +234,7 @@ h2 {
 .tiktok-icone {
     height: 30px;
 }
-
+/* ---------------------------- */
 /* Icones escondidos no desktop */
 .hamburguer{
     display: none;
@@ -359,11 +315,52 @@ h2 {
         text-shadow: 1px 1px black;
     }
     /* ------------------------------------------ */
+
 }
 
 
 
-/* Smartphones <767 */
+/* Smartphones <768 */
+@media screen and (max-width: 767px){
+    .rodape-politica{
+        display: none;
+    }
+    
+    #divBusca{
+        display: none;
+    }
+    .rodape-duvidas{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 470px){
+    .rodape-logo{
+        display: none;
+    }
+    .carrinho{
+        display: none;
+    }
+    .logotipo p{
+        display: none;
+    }
+
+    .rodape h2{
+        font-size: 14px;
+    }
+    .rodape li{
+        font-size: 12px;
+    }
+    .face-icone,
+    .insta-icone,
+    .tiktok-icone {
+        height: 25px;
+    }
+    
+    
+}
+
 
 
 /* Customização do bootstrap */
