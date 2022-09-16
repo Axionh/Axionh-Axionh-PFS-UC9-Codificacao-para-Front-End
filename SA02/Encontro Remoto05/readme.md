@@ -1,1 +1,0 @@
-#Projeto disponível em: https://eduardocostaprofessor.github.io/E-players_FE8_FS12/
